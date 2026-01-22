@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Megha M | Resume</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fb;
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    header p {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .contact {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 30px auto;
+    }
+
+    .section {
+        background: white;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .section-title {
+        padding: 15px 20px;
+        background: #2575fc;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-title:hover {
+        background: #1a5ed8;
+    }
+
+    .content {
+        display: none;
+        padding: 20px;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .badge {
+        background: #6a11cb;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Megha M</h1>
+    <p>Bachelor of Computer Applications</p>
+    <div class="contact">
+        📞 +91 6361443575 | ✉️ meghabhishek2323@gmail.com <br>
+        🔗 linkedin.com/in/megha-abhishek
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <div class="section">
+        <div class="section-title" onclick="toggle(this)">About Me</div>
+        <div class="content">
+            <p>
+                Motivated BCA graduate with strong interest in programming, software development and data science.
+                Possess good problem-solving skills and hands-on exposure to real-world IT practices.
+                Eager to learn new technologies and contribute effectively to organizational growth.
+            </p>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title" onclick="toggle(this)">Education</div>
+        <div class="content">
+            <ul>
+                <li><b>BCA (2023 – 2026)</b> – Indus Valley Degree College, Bangalore</li>
+                <li><b>PUC (2019 – 2020)</b> – Science Academy PU College, Davanagere</li>
+                <li><b>SSLC (2017 – 2018)</b> – St. John’s School, Davanagere</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <div class="section-title" onclick="toggle(this)">Technical Experience</div>
+        <div class="content">
+            <ul>
+                <li>
+                    <b>Industrial Training – Indus Valley Degree College</b>
+                    <span class="badge">2025</span>
+                    <ul>
+                        <li>Real-world IT practices and mini projects</li>
+                        <li>Teamwork and communication skills</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <b>Applic CODERS Software Solutions</b>
+                    <span class="badge">2025</span>
+                    <ul>
+                        <li>AWS & Cloud Computing fundamentals</li>
+                        <li>EC2, S3, IAM concepts</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <b>NASSCOM – Capgemini</b>
+                    <span class="badge">In Progress</span>
+                    <ul>
+                        <li>Python & Data Science</li>
+                        <li>NumPy, Pandas, Matplotlib</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <b>Internship – IMDTA Infotech Pvt Ltd</b>
+                    <span class="badge">In Progress</span>
+                    <ul>
+                        <li>Development workflows</li>
+                        <li>Debugging and optimization</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <div class="section-title" onclick="toggle(this)">Skills</div>
+        <div class="content">
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section">
+        <div class="section-title" onclick="toggle(this)">Tools Known</div>
+        <div class="content">
+            <ul>
+                <li>PyCharm</li>
+                <li>Visual Studio Code</li>
+                <li>Turbo C++</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+        <div class="section-title" onclick="toggle(this)">Achievements</div>
+        <div class="content">
+            <p>
+                Actively participated in various inter-college curricular activities and received certificates.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 | Megha M | Interactive Resume
+</footer>
+
+<script>
+    function toggle(element) {
+        const content = element.nextElementSibling;
+        const allContents = document.querySelectorAll('.content');
+
+        allContents.forEach(c => {
+            if (c !== content) c.style.display = "none";
+        });
+
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
